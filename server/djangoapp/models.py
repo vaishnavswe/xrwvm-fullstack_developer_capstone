@@ -39,7 +39,7 @@ class CarModel(models.Model):
         default=now().year,
         validators=[
             MinValueValidator(2015),
-            MaxValueValidator(2023)
+            MaxValueValidator(now().year)
         ]
     )
 
